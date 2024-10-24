@@ -1,26 +1,29 @@
-def validate_input(value):
+def validate_input(a: int, b: int) -> bool:
     """
-    Validates if the input is a non-negative integer.
+    Validates that both inputs are integers and non-negative.
     
     Parameters:
     -----------
-    value : str
-        Input value to be validated.
+    a : int
+        First number.
+    b : int
+        Second number.
     
     Returns:
     --------
-    int
-        Validated non-negative integer.
+    bool
+        True if both inputs are valid, False otherwise.
     
     Raises:
     -------
+    TypeError:
+        If any input is not an integer.
     ValueError:
-        If the value is not a valid non-negative integer.
+        If any input is negative.
     """
-    try:
-        ivalue = int(value)
-        if ivalue < 0:
-            raise ValueError
-        return ivalue
-    except ValueError:
-        raise ValueError(f"Invalid input: {value}. Please enter a non-negative integer.")
+    if not isinstance(a, int) or not isinstance(b, int):
+        raise TypeError("Both inputs must be integers.")
+    if a < 0 or b < 0:
+        raise ValueError("Both inputs must be non-negative.")
+    
+    return True
