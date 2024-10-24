@@ -1,31 +1,31 @@
 # Euclid GCD Calculator
 
-## Proje Tanımı
-Bu proje, Öklid Algoritması kullanarak iki sayının en büyük ortak bölenini (EBOB) hesaplamak için geliştirilmiştir. Python programlama dilinde yazılmıştır ve matematiksel bir uygulama olarak eğitim ve araştırma amacıyla kullanılabilir.
+## Project Description
+This project is designed to calculate the Greatest Common Divisor (GCD) of two integers using Euclid's Algorithm. It is implemented in Python and can be utilized for educational and research purposes as a mathematical application.
 
-## Özellikler
-- İki sayının EBOB'unu hesaplar.
-- Geçerli girişleri kontrol eden fonksiyonlar içerir.
-- Modüler yapısıyla okunabilir ve genişletilebilir.
+## Features
+- Computes the GCD of two numbers.
+- Includes functions to validate input.
+- Modular architecture for readability and extensibility.
 
-## Kullanım
-1. Python 3.x yükleyin.
-2. Terminalde projeyi klonlayın:
+## Usage
+1. Install Python 3.x.
+2. Clone the project in your terminal:
    ```bash
    git clone https://github.com/SudeErzurumlu/euclid-gcd-calculator.git
    cd euclid-gcd-calculator
-   ```
-3. Projeyi çalıştırın:
+
+3. Run the project:
    ```bash
    python -m euclid_gcd
    ```
 
-## Testler
+## Testing
+The unittest module is used for testing. To run the tests:
 
-Testler için unittest modülü kullanılmıştır. Testleri çalıştırmak için:
    ```bash
    python -m unittest discover -s tests
    ```
 
-## Lisans
-MIT Lisansı altında lisanslanmıştır.
+## License
+This project is licensed under the MIT License.
